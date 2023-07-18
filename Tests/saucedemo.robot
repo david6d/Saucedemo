@@ -5,3 +5,5 @@ Library     Browser
 
 
 *** Test Cases ***
+Test feature 1
+    Log    Doing feature 1
