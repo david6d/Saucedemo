@@ -1,9 +1,10 @@
 *** Settings ***
-Library     Browser
+Resource        ../Data/common.robot
+Resource        saucedemoKeywords.robot
 
-*** Variables ***
-
+Test Setup      common.Begin Web Test
+Test Teardown   common.End Web Test
 
 *** Test Cases ***
-Test feature 1
-    Log    Doing feature 1
+The Website "saucedemo" Should Load
+    saucedemoKeywords.Open Website "saucedemo"
